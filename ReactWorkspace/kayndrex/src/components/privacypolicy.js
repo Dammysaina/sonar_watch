@@ -1,8 +1,10 @@
 import React from "react";
+import '../assest/css/privacypolicy.css'
+
 
 const Privacypolicy = () => {
   return (
-    <div>
+    <div className="privacy_policy">
       <div>
         <h1>Kayndrexsphere Privacy Policy</h1>
       </div>

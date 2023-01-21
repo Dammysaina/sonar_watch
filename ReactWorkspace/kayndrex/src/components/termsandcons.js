@@ -1,8 +1,10 @@
 import React from "react";
+import '../assest/css/termsandcons.css'
+
 
 const Termsandcons = () => {
   return (
-    <div>
+    <div className="termsandcons">
       <div>
         <h1>Terms and Conditions (&#39;Terms&#39;)</h1>
       </div>
@@ -28,7 +30,7 @@ const Termsandcons = () => {
           <div>
             <h3>Definitions</h3>
             <p>For the purposes of these Terms and Conditions:</p>
-            <ol>
+            <ul>
               <li>
                 <span>&#39;Application&#39; </span>means the software programme
                 provided by the Company downloaded by You on any electronic
@@ -91,9 +93,8 @@ const Termsandcons = () => {
               <li>
                 {" "}
                 &#39;Website&#39; refers to{" "}
-                <a href="www.kayndrexsphere.com"> www.kayndrexsphere.com</a>,
-                accessible from
-                <a href="https://linktr.ee/kayndrexsphere.com">
+                <a href="https://www.kayndrexsphere.com/" target="_blank" rel="noreferrer"> www.kayndrexsphere.com</a>,
+                accessible from <a href="https://linktr.ee/kayndrexsphere.com" target="_blank" rel="kayndrex noreferrer">
                   https://linktr.ee/kayndrexsphere.com
                 </a>
               </li>
@@ -103,7 +104,7 @@ const Termsandcons = () => {
                 which such individual is accessing or using the Service, as
                 applicable.{" "}
               </li>
-            </ol>
+            </ul>
           </div>
           <div>
             <h3>Acknowledgement</h3>
@@ -247,7 +248,7 @@ const Termsandcons = () => {
             </p>
             <p>
               You may be held accountable for damages (including costs and
-              attorneys’ fees) for misrepresenting that any Content is
+              attorneys&#39; fees) for misrepresenting that any Content is
               infringing Your copyright.{" "}
             </p>
           </div>
