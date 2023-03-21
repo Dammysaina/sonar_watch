@@ -1,0 +1,174 @@
+.financialneeds_container {
+  /* background-color: #006df7; */
+  margin-top: -12rem;
+  padding: 12rem 6rem 0 6rem;
+}
+.financial_needs {
+  color: #000000;
+  margin: 2rem 7rem 3rem 7rem;
+}
+.financial_needs h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.financial_needs p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -2rem;
+}
+.phone_container img{
+   width: 65rem;
+   margin: 0 3rem 0 1rem;
+}
+.frame_one {
+  position: relative;
+  bottom: 25.5rem;
+  right: -0.5rem;
+  width: 17rem;
+}
+.frame_two {
+  position: relative;
+  bottom: 19.5rem;
+  width: 17rem;
+  right: -8.4rem;
+}
+.frame_three {
+  position: relative;
+  bottom: 9rem;
+  width: 17rem;
+}
+.customers_container {
+    margin: 4rem 7rem 2rem 7rem;
+}
+.our_customers {
+    text-align: center;
+}
+.our_customers h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+.our_customers p {
+    color: #777E90;
+    font-size: 0.9rem;
+    font-weight: 450;
+    margin: -1rem 0 2.5rem 0;
+}
+.selection {
+    background-color: #F9FAFB;
+    padding: 1rem;
+    width: 20rem;
+}
+.selection_text p {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.selection:not(:last-child) {
+    margin-right: 2rem;
+} 
+.star_images {
+    margin-top: 1rem;
+}
+.star_images img:not(:last-child) {
+    padding-right:0.5rem;
+}
+.profile_name {
+    display: flex;
+}
+.profile_name img {
+    padding-right: 1rem;
+}
+.forcastCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payments_container {
+    display: flex;
+    justify-content: space-between;
+}
+.payments_container h1 {
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+.payments_container:not(:last-child) {
+    margin-bottom: 3rem;
+}
+.payments_app {
+    width: 27rem;
+    position: relative;
+    top: -2rem;
+    text-align: left;
+}
+.payments_app h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.payments_app p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-bottom: 2em;
+    width: 23rem;
+}
+.payments img {
+    width: 25rem;
+}
+
+.building_container {
+    background-color: #006df7;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 20rem;
+    margin: 2rem 0 3rem 0;
+}
+.building_container h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.building_container p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.travel_container {
+    display: flex;
+    justify-content: space-between;
+}
+.move_container {
+    padding: 3rem 2rem 1rem 2rem;
+    /* width: 30rem;2 */
+    /* margin: 0 1rem; */
+}
+.move_container:not(:last-child){
+    margin-right: 1rem;
+}
+.move_travels {
+    background-color: #F6F0EF;
+    margin-right: 1rem;
+}
+.travel_travels {
+    background-color: #F4F1F7;
+    margin-right: 1rem;
+}
+.pay_travels {
+    background-color: #E8F4FF;
+    margin-right: 1rem;
+}
+.shop_travels {
+    background-color: #EBF1FF;
+}
+.move_credpal {
+    margin-top: 4rem;
+}
+.learn_more {
+    display: flex;
+}
+.learn_more img {
+    background-color: #FA8A67;
+    padding: 0.5rem;
+    border-radius: 60%;
+    width: 0.8rem;
+    height: 0.8rem;
+    position: relative;
+    top: 0.8rem;
+    margin-left: 0.5rem;
+}

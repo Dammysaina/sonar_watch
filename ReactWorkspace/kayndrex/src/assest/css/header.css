@@ -25,3 +25,7 @@
     top: 0.6rem;
     margin-right: 3rem;
 }
+.kayndrex_header a {
+    text-decoration: none;
+    color: #ffffff;
+}

@@ -1,30 +1,24 @@
-.language_container {
-    
-}
 .change_language {
-    background-image: url("../images/mobile.jpeg");
-    width: 100%;
-    height: 20rem ;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: black;
 }
 .language_date {
-    padding: 0 6rem;
+    padding: 2rem 5rem;
     text-align: left;
 }
-
 .change_language h1 {
     font-weight: 400;
     color: #ffffff;
     margin: auto;
-    /* text-align: center; */
-    padding-top: 8rem;
+    padding: 5rem 0;
+    text-align: center;
 }
 .last_date {
     font-size: 1rem;
 }
 .devices {
     font-weight: 600;
+}
+.terms_list span {
+    font-weight: 700;
+    font-size: 1rem;
 }

@@ -1,16 +1,16 @@
 import React from "react";
-import '../assest/css/privacypolicy.css'
+import '../assest/css/language.css'
 
 
 const Privacypolicy = () => {
   return (
-    <div className="privacy_policy">
-      <div>
+    <div >
+      <div className="change_language">
         <h1>Kayndrexsphere Privacy Policy</h1>
       </div>
-      <div>
+      <div className="language_date">
         <h3>
-          Last Updated:<span>[18/01/2023]</span>{" "}
+        Our Privacy Policy were last Updated:<span>[18/01/2023]</span>{" "}
         </h3>
         <div>
           <h2>Introduction</h2>

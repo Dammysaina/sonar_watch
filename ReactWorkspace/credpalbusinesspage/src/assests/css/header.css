@@ -1,0 +1,49 @@
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 6rem;
+    /* margin: 1.5rem 6rem; */
+    position: relative;
+}
+.logo_container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo_container img {
+    width: 10rem;
+    margin-right: 2rem;
+}
+.logo_container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffffff;
+}
+.logo_container ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+.logo_container li {
+    font-size: 1rem;
+    font-weight: 350;
+}
+.faq_container {
+    display: flex;
+    justify-content: space-around;
+}
+.faq_container p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 450;
+}
+.nigeria_container {
+    padding: 0 2rem;
+}
+.nigeria {
+    position: relative;
+    top: 0.5rem;
+}
+.dropdown {
+    position: relative;
+    top:-0.5rem;
+    padding-left: 0.7rem;
+}

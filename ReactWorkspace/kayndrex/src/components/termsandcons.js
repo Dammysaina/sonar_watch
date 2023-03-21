@@ -1,16 +1,15 @@
 import React from "react";
-import '../assest/css/termsandcons.css'
-
+import "../assest/css/language.css";
 
 const Termsandcons = () => {
   return (
     <div className="termsandcons">
-      <div>
+      <div className="change_language">
         <h1>Terms and Conditions (&#39;Terms&#39;)</h1>
       </div>
-      <div>
+      <div className="language_date ">
         <div>
-          <p>Our Terms and Conditions were last updated on [19/01/2023]. </p>
+          <h3>Our Terms and Conditions were last updated: [19/01/2023] </h3>
           <p>
             Please read these terms and conditions carefully before using Our
             Service.{" "}
@@ -30,7 +29,7 @@ const Termsandcons = () => {
           <div>
             <h3>Definitions</h3>
             <p>For the purposes of these Terms and Conditions:</p>
-            <ul>
+            <ul className="terms_list">
               <li>
                 <span>&#39;Application&#39; </span>means the software programme
                 provided by the Company downloaded by You on any electronic
@@ -52,54 +51,66 @@ const Termsandcons = () => {
                 election of directors or other managing authority.
               </li>
               <li>
-                &#39;Account&#39; means a unique account created for You to
+                <span>&#39;Account&#39;</span> means a unique account created for You to
                 access our Service or parts of our Service.
               </li>
               <li>
-                &#39;Company&#39; (referred to as either &#39;the Company&#39;,
+                <span>&#39;Company&#39;</span> (referred to as either &#39;the Company&#39;,
                 &#39;We&#39;, &#39;Us&#39; or &#39;Our&#39; in this Agreement)
                 refers to Kayndrexsphere Group.
               </li>
-              <li>&#39;Country&#39; refers to Ireland.</li>
+              <li> <span>&#39;Country&#39;</span> refers to Ireland.</li>
               <li>
-                &#39;Content&#39; refers to content such as text, images, or
+                <span>&#39;Content&#39;</span> refers to content such as text, images, or
                 other information that can be posted, uploaded, linked to or
                 otherwise made available by You, regardless of the form of that
                 content.
               </li>
               <li>
-                &#39;Device&#39; means any device that can access the Service
+                <span>&#39;Device&#39;</span> means any device that can access the Service
                 such as a computer, a cell phone or a digital tablet.
               </li>
               <li>
-                &#39;Feedback&#39; means feedback, innovations or suggestions
+                <span>&#39;Feedback&#39;</span> means feedback, innovations or suggestions
                 sent by You regarding the attributes, performance or features of
                 our Service.
               </li>
-              <li>&#39;Service&#39; refers to the Website.</li>
+              <li><span>&#39;Service&#39; </span>refers to the Website.</li>
               <li>
                 {" "}
-                &#39;Terms and Conditions&#39; (also referred as
-                &#39;Terms&#39;) means these Terms and Conditions that form the
+                <span>&#39;Terms and Conditions&#39;</span> (also referred as
+                <span>&#39;Terms&#39;</span>) means these Terms and Conditions that form the
                 entire agreement between You and the Company regarding the use
                 of the Service.
               </li>
               <li>
-                &#39;Third-party Service&#39; means any services or content
+                <span>&#39;Third-party Service&#39;</span> means any services or content
                 (including data, information, products or service) provided by a
                 third-party that may be displayed, included or made available by
                 the Service.
               </li>
               <li>
                 {" "}
-                &#39;Website&#39; refers to{" "}
-                <a href="https://www.kayndrexsphere.com/" target="_blank" rel="noreferrer"> www.kayndrexsphere.com</a>,
-                accessible from <a href="https://linktr.ee/kayndrexsphere.com" target="_blank" rel="kayndrex noreferrer">
+                <span>&#39;Website&#39;</span> refers to{" "}
+                <a
+                  href="https://www.kayndrexsphere.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  www.kayndrexsphere.com
+                </a>
+                , accessible from{" "}
+                <a
+                  href="https://linktr.ee/kayndrexsphere.com"
+                  target="_blank"
+                  rel="kayndrex noreferrer"
+                >
                   https://linktr.ee/kayndrexsphere.com
                 </a>
               </li>
               <li>
-                &#39;You&#39; means the individual accessing or using the
+                <span>&#39;You&#39;</span> means the individual accessing or using the
                 Service, or the company, or other legal entity on behalf of
                 which such individual is accessing or using the Service, as
                 applicable.{" "}
@@ -143,9 +154,9 @@ const Termsandcons = () => {
             <p>
               You are responsible for safeguarding the password that You use to
               access the Service and for any activities or actions under Your
-              password. You agree not to disclose Your password to any third
-              party. You must notify Us immediately upon becoming aware of any
-              breach of security or unauthorised use of Your account.
+              password. You agree not to disclose Your password to any
+              third-party. You must notify Us immediately upon becoming aware of
+              any breach of security or unauthorised use of Your account.
             </p>
           </div>
           <h2>Content</h2>
@@ -180,7 +191,7 @@ const Termsandcons = () => {
               or otherwise objectionable. Examples of such objectionable Content
               include, but are not limited to the following:
             </p>
-            <ol>
+            <ul>
               <li>Unlawful or promoting unlawful activity.</li>
               <li>
                 Defamatory, discriminatory, or mean-spirited content, including
@@ -208,7 +219,7 @@ const Termsandcons = () => {
               </li>
               <li>violating the privacy of any third person.</li>
               <li>False information and features</li>
-            </ol>
+            </ul>
             <p>
               The Company reserves the right but not the obligation, to, in its
               sole discretion, determine whether or not any Content is
@@ -288,17 +299,17 @@ const Termsandcons = () => {
             </p>
             <p>
               The Company has no control over, and assumes no responsibility
-              for, the content, privacy policies, or practices of any third
-              party web sites or services. You further agree that the Company
-              shall not be responsible or liable, directly or indirectly, for
-              any damage or loss caused or alleged to be caused by or in
-              connection with the use of or reliance on any such content, goods
-              or services available on or through any such web sites or
-              services.{" "}
+              for, the content, privacy policies, or practices of any
+              third-party web sites or services. You further agree that the
+              Company shall not be responsible or liable, directly or
+              indirectly, for any damage or loss caused or alleged to be caused
+              by or in connection with the use of or reliance on any such
+              content, goods or services available on or through any such web
+              sites or services.{" "}
             </p>
             <p>
               We strongly advise You to read the terms and conditions and
-              privacy policies of any thirdparty web sites or services that You
+              privacy policies of any third-party web sites or services that You
               visit.{" "}
             </p>
           </div>
@@ -431,8 +442,8 @@ const Termsandcons = () => {
             <p>
               Except as provided herein, the failure to exercise a right or to
               require performance of an obligation under these Terms shall not
-              effect a party’s ability to exercise such right or require such
-              performance at any time thereafter nor shall the waiver of a
+              effect a party&#39;s ability to exercise such right or require
+              such performance at any time thereafter nor shall the waiver of a
               breach constitute a waiver of any subsequent breach.
             </p>
           </div>
@@ -441,9 +452,9 @@ const Termsandcons = () => {
             <p>
               We reserve the right, at our Sole discretion, to modify or replace
               these Terms at any time. If a revision is material, We will make
-              reasonable efforts to provide at least 30 days’ notice prior to
-              any terms taking effect. What constitutes a material change will
-              be determined at Our sole discretion.{" "}
+              reasonable efforts to provide at least 30 days&#39; notice prior
+              to any terms taking effect. What constitutes a material change
+              will be determined at Our sole discretion.{" "}
             </p>
             <p>
               By continuing to access or use Our Service after those revisions
@@ -458,11 +469,11 @@ const Termsandcons = () => {
               If you have any questions concerning these Terms and Conditions,
               You can contact us:
             </p>
-            <ol>
+            <ul>
               <li>
                 By visiting this page on our website: hello@kayndrexsphere.net
               </li>
-            </ol>
+            </ul>
           </div>
         </div>
       </div>

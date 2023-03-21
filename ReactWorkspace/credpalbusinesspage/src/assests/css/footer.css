@@ -1,0 +1,67 @@
+.footerone_container {
+    display: flex;
+    background-color: #F1F5FF;
+    justify-content: space-between;
+    padding: 0 0rem 0 8rem ;
+}
+.join_container {
+    padding: 5rem 0;
+    width: 25rem;
+}
+.credpal_container h4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.credpal_container p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+}
+.phone_debit {
+    margin-left: 3rem;
+    display: inline;
+}
+.phone_debit img {
+    width: 20rem;
+}
+.footertwo_container {
+    margin: 4rem;
+}
+.footerlogo_container {
+    width: 20.5rem;
+    margin-right: 10rem;
+}
+.footerone {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.footerone p {
+    font-size: 0.77rem;
+    font-weight: 400;
+}
+.aboutCompany h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: -0.6rem;
+}
+.aboutCompany {
+    /* margin-right: 1rem; */
+    width: 10rem;
+}
+.footer_two {
+    border-top: 1px solid #E6E8EC;
+    border-bottom: 1px solid #E6E8EC;
+    padding: 2rem 0;
+    font-size: 0.77rem;
+    font-weight: 400;
+}
+.footer_three {
+    padding-left: 45rem;
+    font-size: 0.77rem;
+    font-weight: 400;
+   
+}
+.footer_three span {
+    color: #3772FF;
+}
