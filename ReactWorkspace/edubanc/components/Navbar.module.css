@@ -1,0 +1,19 @@
+/* components/Navbar.module.css */
+.navbar {
+    display: flex;
+  }
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar li {
+    margin-right: 1rem;
+  }
+  .navbar a {
+    text-decoration: none;
+    color:#00000080;    ;
+    font-weight: bold;
+  }
+  
