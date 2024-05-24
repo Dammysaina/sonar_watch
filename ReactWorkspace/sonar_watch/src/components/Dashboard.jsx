@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-// import GrayAddress from "../assets/images/grayaddress.svg";
-import { HiOutlinePlusSm } from "react-icons/hi";
+import BlockIcon from "../assets/images/blockicon.svg";
+import Footer from "./Footer";
+import ListIcon from "../assets/images/listicon.svg";
+import Dropdown from "../assets/images/dropdown.svg";
+import SampleView from "./SampleView";
+
+// import Table from "./table";
 
 const Dashboard = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,79 +32,91 @@ const Dashboard = () => {
           <Sidebar />
         </div>
 
-        <div className="px-100 pt-20">
+        <div className="px-100 pt-20 border-blue-50">
           <div className="flex-grow text-left py-4">
-            <h4 className="text-lg font-semibold text-[#202020]">
+            <h4 className="text-lg font-bold text-[#202020]">
               Discover protocols
             </h4>
           </div>
-          {/* <div className="flex"> */}
-          {/* <div className="bg-searchIcon rounded-md flex items-center w-full max-w-xl mr-4 p-2 shadow-sm focus:ring-2 focus:ring-green-700 focus:outline-none">
-              <div>
-                <input
-                  type="search"
-                  name=""
-                  id=""
-                  placeholder="Search for protocols"
-                  className="w-96 pl-3 text-sm text-black outline-none focus:outline-none bg-transparent"
-                />
-              </div>
-            </div> */}
-
-          {/* <div className="flex">
-              <button className="group text-black p-4 mb-2 w-60 rounded-lg flex items-center bg-customGray">
-                Filter by : <span>All chains</span>
-                <span>
-                  <HiOutlinePlusSm className="ml-3" />
-                </span>
-              </button>
-              <button className="group text-black px-12 py-2 mb-2 rounded-lg flex items-center bg-customGray">
-                Filter by : <span>All chains</span>
-                <span>
-                  <HiOutlinePlusSm className="ml-3" />
-                </span>
-              </button>
-            </div> */}
-          {/* </div> */}
           <div className="flex">
-            <div className="bg-searchIcon rounded-md flex items-center w-full max-w-l mr-4 p-2 shadow-sm">
+            <div className="bg-searchIcon rounded-md flex items-center w-full max-w-l mr-4 p-2 shadow-sm h-12">
               <input
                 type="search"
                 placeholder="Search for protocols"
-                className="w-96 h-4 pl-3 text-sm text-black outline-none focus:outline-none bg-transparent"
+                className="w-96 pl-3 text-sm text-black outline-none focus:outline-none bg-transparent"
               />
             </div>
-            <div className="flex justify justify-between">
-              <button className="group text-black px-4 py-2 mb-2 rounded-lg flex items-center bg-customGray">
-                <span className="text-textGray"> Filter by:</span>{" "}
-                <span className="ml-2">All chains</span>
-                <HiOutlinePlusSm className="ml-2" />
-              </button>
+            <div className="flex justify justify-end mr-6">
+              <div>
+                <button className="group flex text-black h-10 w-56 px-6 py-2 ml-8 rounded-lg items-center bg-searchIcon">
+                  <span className="text-textGray mr-2"> Filter by :</span> All
+                  chains
+                  <img src={Dropdown} alt="dropdown" className="ml-6" />
+                </button>
               </div>
               <div>
-              {/* <button className="group text-black px-12 py-2 mb-2 rounded-lg flex items-center bg-customGray">
-                Filter by: <span className="ml-2">All chains</span>
-                <HiOutlinePlusSm className="ml-3" />
-              </button> */}
-              <button className="group text-black px-2 pt-4 mb-2 rounded-lg flex items-center bg-customGray">
-                <span className="text-textGray"> Filter by:</span>{" "}
-                <span className="ml-2">All chains</span>
-                <HiOutlinePlusSm className="ml-2" />
-              </button>
+                <button className="group flex text-black h-10 w-52 px-4 py-2 ml-8 rounded-lg items-center bg-searchIcon">
+                  <span className="text-textGray mr-2"> Sort by :</span>
+                  Most $TVL
+                  <img src={Dropdown} alt="dropdown" className="ml-4" />
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex mt-4">
-            <button className=" text-textGray font-semibold text-sm pl-4 focus focus:rounded-lg flex items-center ">
-              All protocols
-            </button>
-            <button className="group text-textGray pl-8 font-semibold text-sm ">New</button>
-            {/* <button class="text-textGray active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
-  Save changes
-</button> */}
+            <div className="flex ">
+              <button className=" text-textGray font-medium text-semibold pl-4 rounded-md focus:outline-none focus:bg focus:bg-textLightGreen focus:text focus:text-textGreen flex items-center ">
+                All protocols
+              </button>
+              <button className="group text-textGray pl-8 font-medium text-sm ">
+                Recommended
+              </button>
+              <button className="group text-textGray pl-8 mx-4 font-medium text-sm ">
+                New
+              </button>
+            </div>
+            <div className="flex justify-end space-x-4 pt-4 pr-8">
+              <button className="group text-black p-3 mb-2 rounded-lg flex items-center bg-searchIcon">
+                <img src={BlockIcon} alt="listicon" className="w-5 h-5" />
+              </button>
+              <button className="group text-black p-3 mb-2 rounded-lg flex items-center bg-searchIcon">
+                <img src={ListIcon} alt="listicon" className="w-6 h-6" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <table class="border-collapse border border-slate-500 ...">
+              <thead>
+                <tr>
+                  <th class="border border-slate-600 ...">State</th>
+                  <th class="border border-slate-600 ...">City</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-700 ...">Indiana</td>
+                  <td class="border border-slate-700 ...">Indianapolis</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-700 ...">Ohio</td>
+                  <td class="border border-slate-700 ...">Columbus</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-700 ...">Michigan</td>
+                  <td class="border border-slate-700 ...">Detroit</td>
+                </tr>
+              </tbody>
+            </table>
+            {/* <Table /> */}
           </div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <SampleView />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

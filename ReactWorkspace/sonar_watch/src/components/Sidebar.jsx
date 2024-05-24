@@ -7,7 +7,8 @@ import BugReport from "../assets/images/bug.svg";
 import RequestFeature from "../assets/images/request.svg";
 import Settings from "../assets/images/settings.svg";
 import Download from "../assets/images/download.svg";
-import "../assets/css/styles.css"
+import "../assets/css/styles.css";
+import { Link } from "react-scroll";
 
 const Sidebar = () => {
   return (
@@ -24,35 +25,32 @@ const Sidebar = () => {
       </div>
       <div>
         <ul className="text-left sm:text-center lg:text-left">
-          <li className="my-4 text-black flex items-center font-medium text-base ">
-            <span className="mr-2">
-              <img src={HomeIcon} alt="homeicon" className="w-5" />
-            </span>
-            Discover Protocols
-          </li>
-          {/* <li className="mb-4 text-black flex items-center font-medium text-base focus:outline-none focus:bg-gray-200 focus:text-blue-500">
-            <button className="flex items-center w-full text-left focus:outline-none">
+          <Link to="home">
+            <li className="my-4 text-black flex items-center font-medium text-base  ">
               <span className="mr-2">
-                <img src={HomeIcon} alt="homeicon" className="w-4" />
+                <img src={HomeIcon} alt="homeicon" className="w-5" />
               </span>
               Discover Protocols
-            </button>
-          </li> */}
-          <li className="mb-4 text-black flex items-center font-medium text-base ">
-            <span className="mr-2">
-              <img src={HomeIcon} alt="homeicon" className="w-5" />
-            </span>
-            Home
-          </li>
-          <li className="mb-4 text-black flex items-center font-medium text-base ">
-            <span className="mr-2">
-              <img src={GrayAddress} alt="homeicon" className="w-4" />
-            </span>
-            Address
-          </li>
+            </li>
+          </Link>
+          <Link to="table">
+            <li className="mb-4 text-black flex items-center font-medium text-base ">
+              <span className="mr-2">
+                <img src={HomeIcon} alt="homeicon" className="w-5" />
+              </span>
+              Home
+            </li>
+          </Link>
+          <Link>
+            <li className="mb-4 text-black flex items-center font-medium text-base ">
+              <span className="mr-2">
+                <img src={GrayAddress} alt="homeicon" className="w-4" />
+              </span>
+              Address
+            </li>
+          </Link>
         </ul>
       </div>
-
 
       <div className="mt-120">
         <ul className="text-left sm:text-center lg:text-left">
