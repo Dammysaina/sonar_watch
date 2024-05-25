@@ -23,33 +23,33 @@ const Sidebar = () => {
         </button>
         {/* </Link> */}
       </div>
-      <div>
-        <ul className="text-left sm:text-center lg:text-left">
-          <Link to="home">
-            <li className="my-4 text-black flex items-center font-medium text-base  ">
-              <span className="mr-2">
-                <img src={HomeIcon} alt="homeicon" className="w-5" />
-              </span>
-              Discover Protocols
-            </li>
-          </Link>
-          <Link to="table">
-            <li className="mb-4 text-black flex items-center font-medium text-base ">
-              <span className="mr-2">
-                <img src={HomeIcon} alt="homeicon" className="w-5" />
-              </span>
-              Home
-            </li>
-          </Link>
-          <Link>
-            <li className="mb-4 text-black flex items-center font-medium text-base ">
-              <span className="mr-2">
-                <img src={GrayAddress} alt="homeicon" className="w-4" />
-              </span>
-              Address
-            </li>
-          </Link>
-        </ul>
+
+      <div className="text-left sm:text-center lg:text-left">
+        <Link to="home">
+          <button className="flex my-4 items-center font-medium focus:outline-none focus:bg focus:bg-violet-300">
+            <span className="mr-2">
+              <img src={HomeIcon} alt="homeicon" className="w-5 h-5" />
+            </span>
+            Discover Protocols
+          </button>
+        </Link>
+
+        <Link to="table">
+          <button className="mb-4 text-black flex items-center font-medium text-base ">
+            <span className="mr-2">
+              <img src={HomeIcon} alt="homeicon" className="w-5 h-5" />
+            </span>
+            Home
+          </button>
+        </Link>
+        <Link>
+          <button className="mb-4 text-black flex items-center font-medium text-base ">
+            <span className="mr-2">
+              <img src={GrayAddress} alt="homeicon" className="w-5 h-5" />
+            </span>
+            Address
+          </button>
+        </Link>
       </div>
 
       <div className="mt-120">

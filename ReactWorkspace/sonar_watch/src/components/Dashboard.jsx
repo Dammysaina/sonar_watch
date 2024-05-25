@@ -43,7 +43,7 @@ const Dashboard = () => {
               <input
                 type="search"
                 placeholder="Search for protocols"
-                className="w-96 pl-3 text-sm text-black outline-none focus:outline-none bg-transparent"
+                className="w-96 pl-4 text-sm text-black outline-none focus:outline-none bg-transparent"
               />
             </div>
             <div className="flex justify justify-end mr-6">
@@ -65,21 +65,21 @@ const Dashboard = () => {
           </div>
           <div className="flex mt-4">
             <div className="flex ">
-              <button className=" text-textGray font-medium text-semibold pl-4 rounded-md focus:outline-none focus:bg focus:bg-textLightGreen focus:text focus:text-textGreen flex items-center ">
+              <button className=" text-textGray  h-12 font-medium text-semibold px-6 py-2 rounded-3xl focus:outline-none focus:bg focus:bg-textLightGreen focus:text focus:text-textGreen flex items-center ">
                 All protocols
               </button>
-              <button className="group text-textGray pl-8 font-medium text-sm ">
+              <button className="text-textGray  h-12 font-medium text-semibold px-6 py-2 rounded-3xl focus:outline-none focus:bg focus:bg-textLightGreen focus:text focus:text-textGreen flex items-center ">
                 Recommended
               </button>
-              <button className="group text-textGray pl-8 mx-4 font-medium text-sm ">
+              <button className="text-textGray  h-12 font-medium text-semibold px-6 py-2 rounded-3xl focus:outline-none focus:bg focus:bg-textLightGreen focus:text focus:text-textGreen flex items-center ">
                 New
               </button>
             </div>
             <div className="flex justify-end space-x-4 pt-4 pr-8">
-              <button className="group text-black p-3 mb-2 rounded-lg flex items-center bg-searchIcon">
+              <button className="group h-8 text-black p-3 mb-2 rounded-lg flex items-center bg-searchIcon focus:image focus:image-textGreen">
                 <img src={BlockIcon} alt="listicon" className="w-5 h-5" />
               </button>
-              <button className="group text-black p-3 mb-2 rounded-lg flex items-center bg-searchIcon">
+              <button className="group h-8 text-black p-3 mb-2 rounded-lg flex items-center bg-searchIcon">
                 <img src={ListIcon} alt="listicon" className="w-6 h-6" />
               </button>
             </div>
