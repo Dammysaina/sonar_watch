@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navText: "18191F"
+        navText: "18191F",
+        homeBg: "F5F7FA",
       }
     },
   },
