@@ -2,21 +2,26 @@ import React from "react";
 import { Link } from "react-scroll";
 import HomeImage from "../assets/images/homeimage.svg";
 import MobilePhone from "../assets/images/communitymobile.svg";
+import { ReactTyped } from "react-typed";
 
 const Home = () => {
   return (
     <div>
       <div
         name="home"
-        className=" flex w-full h-screen bg-homeBg pb-0 py-32 px-32"
+        className=" flex w-full h-screen bg-homeBg pb-0 py-32 px-32 "
       >
         {/*Container*/}
-        <div className="h-full justify justify-center my-32">
-          <h1 className="text-4xl sm:text-7xl font-bold text-black">
-            Welcome to{" "}
-            <span className="text-4xl sm:text-7xl font-bold text-[#0051F9]">
-              Home
-            </span>
+        <div className="h-full justify justify-center my-28">
+          <h1 className="text-4xl sm:text-7xl font-bold text-black max-w-[450px]">
+            <ReactTyped
+              strings={["Welcome to <span style='color:#0051F9'>Home</span> "]}
+              typeSpeed={100}
+              loop
+              backSpeed={20}
+              cursorChar="|"
+              className="text-[#0051F9] cursor-color"
+            />
           </h1>
 
           <p className="text-[#8892b0] py-4 pr-40 max-w-[600px]">
