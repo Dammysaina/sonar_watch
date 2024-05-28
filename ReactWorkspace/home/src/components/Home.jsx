@@ -20,7 +20,7 @@ const Home = () => {
               loop
               backSpeed={20}
               cursorChar="|"
-              className="text-[#0051F9] cursor-color"
+             
             />
           </h1>
 

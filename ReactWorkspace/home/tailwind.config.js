@@ -24,7 +24,7 @@ module.exports = {
     function ({ addUtilities }) {
       addUtilities({
         '.cursor-color::after': {
-          content: '"|"',
+          content: '|',
           color: '#0051F9',
           animation: 'blink 1s infinite',
         },
