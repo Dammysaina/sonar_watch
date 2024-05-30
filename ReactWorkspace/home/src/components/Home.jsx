@@ -6,6 +6,7 @@ import { ReactTyped } from "react-typed";
 import ExperienceMobile from "../assets/images/experiencemobile.svg";
 import MobileSection from "../assets/images/mobilesection.svg";
 import HandPhone from "../assets/images/handphone.svg";
+import Explorecard from "./Explorecard";
 
 const Home = () => {
   return (
@@ -53,7 +54,9 @@ const Home = () => {
             Connecting Newcomers to Canada's Vibrant Community and Resources
           </p>
         </div>
-        <div></div>
+        <div className="px-32">
+          <Explorecard />
+        </div>
       </div>
 
       {/* joincommunity */}
