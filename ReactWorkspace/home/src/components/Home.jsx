@@ -120,11 +120,11 @@ const Home = () => {
 
       {/* mobilesection */}
       <div>
-        <img src={MobileSection} alt="phone" className="w-full" />
+        <img src={MobileSection} alt="phone" className="w-full " />
       </div>
       <div className=" flex justify-between w-full bg-[#F5F7FA] px-32 ">
         {/*Container*/}
-        <div className="my-44">
+        <div className="mt-44">
           <h1 className="text-4xl sm:text-7xl font-bold text-black max-w-[700px]">
             Experience <span className="text-[#0051F9]">Home </span>
             on the Go
