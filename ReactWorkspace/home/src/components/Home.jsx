@@ -7,8 +7,10 @@ import ExperienceMobile from "../assets/images/experiencemobile.svg";
 import MobileSection from "../assets/images/mobilesection.svg";
 import HandPhone from "../assets/images/handphone.svg";
 import Explorecard from "./Explorecard";
+import Empowering from "./Empowering";
 
 const Home = () => {
+
   return (
     <div>
       {/* Welcomehome */}
@@ -26,7 +28,6 @@ const Home = () => {
               backSpeed={20}
             />
           </h1>
-
           <p className="text-[#8892b0] py-4 pr-40 max-w-[600px]">
             Your Hub for Newcomers in Canada. Connect, learn, and thrive in your
             new community!
@@ -43,9 +44,8 @@ const Home = () => {
           <img src={HomeImage} alt="homeimage" />
         </div>
       </div>
-
       {/* advantages */}
-      <div>
+      <div className="my-14">
         <div className="text-center justify-items-center">
           <h1 className="text-sm sm:text-7xl font-bold text-[#4D4D4D] px-56">
             Explore the Advantages of Joining Home App
@@ -83,7 +83,7 @@ const Home = () => {
       </div>
 
       {/* empoweryou */}
-      <div className=" flex justify-between w-full px-32  bg-[#F5F7FA]">
+      <div className=" flex px-32 py-20 bg-[#F5F7FA]">
         <div>
           <h1 className="text-4xl sm:text-7xl font-semibold text-[#4D4D4D] max-w-[700px]">
             Empowering{" "}
@@ -96,7 +96,9 @@ const Home = () => {
             information to navigate life in Canada confidently.
           </p>
         </div>
-        <div></div>
+        <div >
+          <Empowering />
+        </div>
       </div>
 
       {/* shareexperience */}
