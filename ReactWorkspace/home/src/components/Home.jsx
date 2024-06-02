@@ -8,9 +8,10 @@ import MobileSection from "../assets/images/mobilesection.svg";
 import HandPhone from "../assets/images/handphone.svg";
 import Explorecard from "./Explorecard";
 import Empowering from "./Empowering";
+import Googleplay from "../assets/images/googleplay.svg";
+import Applepay from "../assets/images/applestore.svg";
 
 const Home = () => {
-
   return (
     <div>
       {/* Welcomehome */}
@@ -47,7 +48,7 @@ const Home = () => {
       {/* advantages */}
       <div className="my-14">
         <div className="text-center justify-items-center">
-          <h1 className="text-sm sm:text-7xl font-bold text-[#4D4D4D] px-56">
+          <h1 className="text-lg sm:text-4xl font-bold text-[#4D4D4D] px-56">
             Explore the Advantages of Joining Home App
           </h1>
           <p className="text-[#8892b0] py-10 px-36">
@@ -65,7 +66,7 @@ const Home = () => {
           <img src={MobilePhone} alt="phone" className="w-180 h-140" />
         </div>
 
-        <div className="my-44">
+        <div className="mt-44">
           <h1 className="text-9xl sm:text-7xl font-semibold text-[#4D4D4D] max-w-[300px]">
             Join the{" "}
             <span className="text-9xl sm:text-7xl font-semibold text-[#F23838]">
@@ -84,10 +85,10 @@ const Home = () => {
 
       {/* empoweryou */}
       <div className=" flex px-32 py-20 bg-[#F5F7FA]">
-        <div>
-          <h1 className="text-4xl sm:text-7xl font-semibold text-[#4D4D4D] max-w-[700px]">
+        <div className="mt-20">
+          <h1 className="text-4xl sm:text-5xl font-semibold text-[#4D4D4D] max-w-[700px]">
             Empowering{" "}
-            <span className="text-9xl sm:text-7xl font-semibold text-[#F7BD2D]">
+            <span className="text-9xl sm:text-5xl font-semibold text-[#F7BD2D]">
               You
             </span>
           </h1>
@@ -96,7 +97,7 @@ const Home = () => {
             information to navigate life in Canada confidently.
           </p>
         </div>
-        <div >
+        <div className="ml-56">
           <Empowering />
         </div>
       </div>
@@ -139,17 +140,13 @@ const Home = () => {
             Stay Connected, Anytime, Anywhere. Download the Home App today to
             unlock a world of opportunities for newcomers in Canada.
           </p>
-          <div className="flex ">
-            <Link to="work">
-              <button className="bg-black text-white px-6 py-3 my-2 rounded-md">
-                Download App
-              </button>
-            </Link>
-            <Link to="work">
-              <button className="bg-black text-white px-6 py-3 my-2 rounded-md">
-                Download App
-              </button>
-            </Link>
+          <div className="flex flex-row items-center my-2">
+            <div>
+              <img src={Googleplay} alt="googleplay" />
+            </div>
+            <div className="ml-4">
+              <img src={Applepay} alt="googleplay" />
+            </div>
           </div>
         </div>
         <div>

@@ -5,13 +5,16 @@ import Engagement from "../assets/images/engagement.svg";
 
 const Explorecard = () => {
   return (
-    <div className="flex justify-between">
-      <div class="max-w-sm rounded-xl text-center justify-center items-center shadow-lg px-5 py-10 ">
+    <div className="flex justify-around">
+      <div className="text-center justify-center items-center shadow-xl px-6 py-12 w-120 h-130 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
+        <div className="flex justify-center items-center  rounded-lg p-6 ">
         <img
           className="text-center justify-center items-center bg-[#FFDB82] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl p-4 w-20 h-20"
           src={Community}
           alt="Sunset in the mountains"
         />
+        </div>
+        
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 text-[#4D4D4D]">
             Community Support{" "}
@@ -22,8 +25,8 @@ const Explorecard = () => {
           </p>
         </div>
       </div>
-      <div className=" text-center justify-center items-center shadow-lg px-5 py-10">
-        <div className="flex justify-center items-center bg-white rounded-lg p-6">
+      <div className=" text-center justify-center items-center shadow-lg px-6.9 py-12 mx-10 w-120 h-130 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
+        <div className="flex justify-center items-center p-6">
           <img
             className="text-center justify-items-center bg-[#FFCFCF] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl  p-4  w-20 h-20"
             src={Essential}
@@ -41,8 +44,8 @@ const Explorecard = () => {
           </p>
         </div>
       </div>
-      <div className=" text-center justify-center items-center shadow-lg">
-        <div className="flex justify-center items-center rounded-lg">
+      <div className=" text-center justify-center items-center shadow-lg px-6 py-12 w-120 h-130 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
+        <div className="flex justify-center items-center rounded-lg p-6">
           <img
             className=" justify-center items-center bg-[#CADBFF] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl  p-4  w-20 h-20"
             src={Engagement}
