@@ -22,15 +22,14 @@ const Explorecard = () => {
           </p>
         </div>
       </div>
-      <div class="max-w-sm rounded-xl text-center justify-items-center overflow-hidden shadow-lg px-5 py-10">
-        <div>
+      <div className=" text-center justify-center items-center shadow-lg px-5 py-10">
+        <div className="flex justify-center items-center bg-white rounded-lg p-6">
           <img
             className="text-center justify-items-center bg-[#FFCFCF] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl  p-4  w-20 h-20"
             src={Essential}
             alt="Sunset in the mountains"
           />
         </div>
-
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 text-[#4D4D4D]">
             Essential Resources{" "}
@@ -59,7 +58,7 @@ const Explorecard = () => {
           </p>
         </div>
       </div>
-      <div className="text-center justify-center items-center shadow-lg">
+      {/* <div className="text-center justify-center items-center shadow-lg">
         <div className="flex justify-center items-center bg-white rounded-lg p-6">
           <img
             className="bg-[#FFDB82] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl p-4 w-20 h-20"
@@ -76,7 +75,7 @@ const Explorecard = () => {
             sense of belonging.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
