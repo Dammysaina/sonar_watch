@@ -5,11 +5,11 @@ import Engagement from "../assets/images/engagement.svg";
 
 const Explorecard = () => {
   return (
-    <div className="flex justify-around">
-      <div className="text-center justify-center items-center shadow-xl px-6 py-12 w-120 h-130 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
-        <div className="flex justify-center items-center  rounded-lg p-6 ">
+    <div className="flex flex-wrap justify-around">
+      <div className="text-center justify-center items-center shadow-xl px-6 py-12 w-120 h-130 md:px-2 md:w-96 md:h-96 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
+        <div className="flex justify-center items-center rounded-lg p-6 ">
         <img
-          className="text-center justify-center items-center bg-[#FFDB82] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl p-4 w-20 h-20"
+          className="text-center justify-center items-center bg-[#FFDB82] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl p-4 w-20 h-20 md:w-14 md:p-2 md:h-14"
           src={Community}
           alt="Sunset in the mountains"
         />
@@ -25,7 +25,7 @@ const Explorecard = () => {
           </p>
         </div>
       </div>
-      <div className=" text-center justify-center items-center shadow-lg px-6.9 py-12 mx-10 w-120 h-130 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
+      <div className=" text-center justify-center items-center shadow-lg px-6.9 py-12 mx-10 w-120 h-130 md:my-10 md:w-96 md:h-96 md:mx-2 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
         <div className="flex justify-center items-center p-6">
           <img
             className="text-center justify-items-center bg-[#FFCFCF] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl  p-4  w-20 h-20"
@@ -44,7 +44,7 @@ const Explorecard = () => {
           </p>
         </div>
       </div>
-      <div className=" text-center justify-center items-center shadow-lg px-6 py-12 w-120 h-130 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
+      <div className=" text-center justify-center items-center shadow-lg px-6 py-12 w-120 h-130 md:h-96 md:w-96 transition duration-300 ease-in-out hover:shadow-xl hover:animate-bounce rounded-3xl">
         <div className="flex justify-center items-center rounded-lg p-6">
           <img
             className=" justify-center items-center bg-[#CADBFF] rounded-tr-2xl rounded-tl-2xl rounded-br-2xl  p-4  w-20 h-20"

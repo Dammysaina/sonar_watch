@@ -4,7 +4,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import Logo from "../assets/images/homelogo.svg";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [Nav, setNav] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-32 py-4 bg-[#F5F7FA] text-navText">
       <div>
-        <Link to="home" smooth={true} duration={500}>
+        <Link to="home" >
           <img src={Logo} alt="Logoimage" style={{ width: "50px" }} className="cursor-pointer"/>
         </Link>
       </div>
@@ -20,22 +20,22 @@ const Navbar = () => {
       {/* menu*/}
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="Home" >
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="About" >
             About
           </Link>{" "}
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
+          <Link to="" >
             Features
           </Link>{" "}
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
+          <Link to="Contact" >
             Contact
           </Link>{" "}
         </li>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
       <div>
       <button className="bg-black text-white px-6 py-3 my-2 rounded-md">
-          <Link to="contact" smooth={true} duration={500}>
+          <Link to="contact" >
             Download
           </Link>{" "}
         </button>
@@ -63,27 +63,22 @@ const Navbar = () => {
         }
       >
         <li  className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="Home" >
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="About" >
             About
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
+          <Link onClick={handleClick} to="skills" >
+            Features
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="Contact" >
             Contact
           </Link>
         </li>

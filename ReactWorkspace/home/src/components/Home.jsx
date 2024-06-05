@@ -17,38 +17,42 @@ const Home = () => {
       {/* Welcomehome */}
       <div
         name="home"
-        className=" flex w-full h-screen bg-[#F5F7FA] py-32 px-32 "
+        className=" flex w-full h-screen bg-[#F5F7FA] py-32 px-32 md:h-auto"
       >
         {/*Container*/}
-        <div className="h-full justify justify-center my-28">
-          <h1 className="text-4xl sm:text-7xl font-bold text-black max-w-[450px]">
-            <ReactTyped
-              strings={["Welcome to <span style='color:#0051F9'>Home</span> "]}
-              typeSpeed={100}
-              loop
-              backSpeed={20}
-            />
-          </h1>
-          <p className="text-[#8892b0] py-4 pr-40 max-w-[600px]">
-            Your Hub for Newcomers in Canada. Connect, learn, and thrive in your
-            new community!
-          </p>
-          <div>
-            <Link to="work">
-              <button className="bg-black text-white px-6 py-3 my-2 rounded-md">
-                Download App
-              </button>
-            </Link>
+        <div className="flex flex-col md:flex-row h-full justify-center items-center my-28 md:my-10 w-full">
+          <div className="text-center md:text-left md:pr-10">
+            <h1 className="text-4xl sm:text-7xl font-bold text-black max-w-[400px] md:text-4xl">
+              <ReactTyped
+                strings={[
+                  "Welcome to <span style='color:#0051F9'>Home</span> ",
+                ]}
+                typeSpeed={100}
+                loop
+                backSpeed={20}
+              />
+            </h1>
+            <p className="text-[#8892b0] py-4 pr-40 max-w-[600px] md:pr-5">
+              Your Hub for Newcomers in Canada. Connect, learn, and thrive in
+              your new community!
+            </p>
+            <div>
+              <Link to="work">
+                <button className="bg-black text-white px-6 py-3 my-2 rounded-md">
+                  Download App
+                </button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src={HomeImage} alt="homeimage" />
+          <div className="md:">
+            <img src={HomeImage} alt="homeimage" />
+          </div>
         </div>
       </div>
       {/* advantages */}
       <div className="my-14">
         <div className="text-center justify-items-center">
-          <h1 className="text-lg sm:text-4xl font-bold text-[#4D4D4D] px-56">
+          <h1 className="text-lg sm:text-6xl font-bold text-[#4D4D4D] px-140 md:px-10 md:text-5xl">
             Explore the Advantages of Joining Home App
           </h1>
           <p className="text-[#8892b0] py-10 px-36">
@@ -73,7 +77,7 @@ const Home = () => {
               Community
             </span>
           </h1>
-          <p className="text-[#8892b0] py-4 pr-40 max-w-[690px]">
+          <p className="text-[#8892b0] py-4 pr-40 max-w-[690px] md:pr-5">
             Connect with Your New Community. At Home, we understand that the
             journey of settling into a new country can be both exciting and
             challenging. Whether you have questions about navigating immigration
@@ -86,18 +90,18 @@ const Home = () => {
       {/* empoweryou */}
       <div className=" flex px-32 py-20 bg-[#F5F7FA]">
         <div className="mt-20">
-          <h1 className="text-4xl sm:text-5xl font-semibold text-[#4D4D4D] max-w-[700px]">
+          <h1 className="text-4xl sm:text-4xl font-semibold text-[#4D4D4D] max-w-[700px] md:text-4xl ">
             Empowering{" "}
-            <span className="text-9xl sm:text-5xl font-semibold text-[#F7BD2D]">
+            <span className="text-4xl sm:text-4xl font-semibold text-[#F7BD2D] md:text-4xl">
               You
             </span>
           </h1>
-          <p className="text-[#8892b0] py-4 pr-40 max-w-[690px]">
+          <p className="text-[#8892b0] py-4 pr-40 max-w-[690px] md:pr-5">
             Essential Resources for Newcomers. Access guides, tools, and
             information to navigate life in Canada confidently.
           </p>
         </div>
-        <div className="ml-56">
+        <div className="ml-56 md">
           <Empowering />
         </div>
       </div>

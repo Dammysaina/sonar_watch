@@ -3,11 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      padding: {
+        '140': '24rem'
+      },
       width : {
           '120': '24rem'
       },
       height: {
-          '130': "25rem"
+          '130': "25rem",
+          '150': "30rem"
       },
       colors: {
         navText: "18191F",
@@ -26,6 +30,12 @@ module.exports = {
       colors:{
         'custom-hover': '#FFD700',
       },
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
   },
   plugins: [

@@ -3,7 +3,7 @@ import Logo from "../assets/images/homelogo.svg";
 import { Link } from "react-scroll";
 import Instagram from "../assets/images/instagram.svg";
 import Twitter from "../assets/images/twitter.svg";
-import Arrow from "../assets/images/arrowsearch.svg"
+import Arrow from "../assets/images/arrowsearch.svg";
 
 const Footer = () => {
   return (
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div className="text-white">
           <h4 className="text-xl font-medium pb-4">Stay up to date</h4>
-          <div className="bg-searchIcon rounded-md flex items-center w-full max-w-xl mr-4 p-2 shadow-sm focus:ring-2 focus:ring-green-700 focus:outline-none">
+          {/* <div className="bg-searchIcon rounded-md flex items-center w-full max-w-xl mr-4 p-2 shadow-sm focus:ring-2 focus:ring-green-700 focus:outline-none">
             <input
               type="search"
               name=""
@@ -62,8 +62,19 @@ const Footer = () => {
               className="w-44 pl-3 text-sm outline-none rounded-sm focus:outline-none bg-[#535353]"
             />
             <img src={Arrow} alt="searchicon" />
+          </div> */}
+          <div className="relative w-full max-w-xl mr-4">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Your email address"
+              className="w-full pl-3 pr-10 py-2 text-sm outline-none rounded-md focus:ring-2 focus:ring-[#D9DBE1] bg-[#535353] text-white"
+            />
+            <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+              <img src={Arrow} alt="searchicon" className="w-5 h-5" />
+            </div>
           </div>
-         
         </div>
       </div>
     </div>
